@@ -14,7 +14,7 @@ public class RecursionTest{
     }
     
     /**
-     * An initial test
+     * Tests for problem set one
      */
     @Test
     public void Test1(){
@@ -33,7 +33,13 @@ public class RecursionTest{
     public void Test4(){
         assertEquals(1, Recursion.count7(14217));
     }
-    // add more tests
+    /**
+     * Tests for problem set 2
+     */
+    @Test
+    public void Test5(){
+        assertEquals("hixx", Recursion.endX("xhix"));
+    }
     
     @After
     public void afterTest(){
