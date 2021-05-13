@@ -13,6 +13,13 @@ public class Recursion{
         return count7(n/10);
     }
     public static String endX(String str){
-        return "hixx";
+        if(str.equals("")){
+            return "";
+        }
+        else
+        if((str.substring(0,1)).equals("x") == false){
+            return str.substring(0,1)+endX(str.substring(1));
+        }else
+        return endX(str.substring(1))+"x";
     }
 }

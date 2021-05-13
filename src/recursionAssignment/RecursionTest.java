@@ -40,6 +40,10 @@ public class RecursionTest{
     public void Test5(){
         assertEquals("hixx", Recursion.endX("xhix"));
     }
+    @Test
+    public void Testg(){
+        assertEquals("x", Recursion.endX("x"));
+    }
     
     @After
     public void afterTest(){
