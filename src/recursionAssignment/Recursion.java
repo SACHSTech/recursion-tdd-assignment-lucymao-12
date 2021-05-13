@@ -13,6 +13,6 @@ public class Recursion{
         return count7(n/10);
     }
     public static String endX(String str){
-        return "xxx";
+        return "hixx";
     }
 }
