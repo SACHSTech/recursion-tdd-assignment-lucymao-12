@@ -22,4 +22,7 @@ public class Recursion{
         }else
         return endX(str.substring(1))+"x";
     }
+    public static boolean array220(int[] intNums, int index){
+        return false;
+    } 
 }
