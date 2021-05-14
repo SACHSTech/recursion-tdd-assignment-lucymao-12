@@ -64,8 +64,38 @@ public class RecursionTest{
      */
     @Test
     public void Test9(){
-        // one x in middle
+        // the values are at the end of the array
         int[] intNums = {1, 2, 20};
+        assertEquals(true, Recursion.array220(intNums, 0));
+    }
+    @Test
+    public void Test10(){
+        // no values that match
+        int[] intNums = {3, 6, 2};
+        assertEquals(false, Recursion.array220(intNums, 0));
+    }
+    @Test
+    public void Test11(){
+        // values at the beginning of the array
+        int[] intNums = {3, 30, 2};
+        assertEquals(true, Recursion.array220(intNums, 0));
+    }
+    @Test
+    public void Test12(){
+        // first value seperated from second: should return false
+        int[] intNums = {3, 2, 30};
+        assertEquals(false, Recursion.array220(intNums, 0));
+    }
+    @Test
+    public void Test13(){
+      // longer array
+      int[] intNums = {1, 4, 6, 3, 30, 3};
+        assertEquals(true, Recursion.array220(intNums, 0));
+    }
+    @Test
+    public void Test14(){
+      // only two values
+      int[] intNums = {1, 10};
         assertEquals(true, Recursion.array220(intNums, 0));
     }
     

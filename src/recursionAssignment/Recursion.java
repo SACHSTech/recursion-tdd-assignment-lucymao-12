@@ -23,6 +23,12 @@ public class Recursion{
         return endX(str.substring(1))+"x";
     }
     public static boolean array220(int[] intNums, int index){
-        return true;
+        if(index == intNums.length-1){
+            return false;
+        }else
+        if(index <= intNums.length-2 && intNums[index + 1]%intNums[index] == 0 && intNums[index +1]/10 == intNums[index]){
+            return true;
+        }else
+        return array220(intNums, index +1);
     } 
 }
