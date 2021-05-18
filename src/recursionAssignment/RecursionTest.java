@@ -42,7 +42,7 @@ public class RecursionTest{
     @Test
     public void Test5(){
         // x at beginning and end
-        assertEquals("hixx", Recursion.endX("xhix"));
+        assertEquals("hixx", Recursion.endX("xhxi"));
     }
     @Test
     public void Test6(){
